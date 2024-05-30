@@ -1,0 +1,33 @@
+.container {
+    text-align: center;
+  }
+  
+  .center-heading {
+    color: #5E47D2;
+  }
+  
+  .table-container {
+    max-height: 300px; /* Adjust the maximum height as needed */
+    overflow-y: auto;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .table th {
+    background-color: #ECDEFF;
+  }
+  
+  .even-row {
+    background-color: #F7F5FF;
+  }
+  

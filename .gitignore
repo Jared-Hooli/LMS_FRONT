@@ -1,0 +1,8 @@
+# Angular specific files
+.angular/
+
+# Node modules
+node_modules/
+
+# Logs
+*.log

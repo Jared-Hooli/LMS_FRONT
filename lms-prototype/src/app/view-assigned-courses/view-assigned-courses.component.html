@@ -1,0 +1,18 @@
+<div class="container">
+  <h4 class="center-heading">Assigned Courses</h4>
+  <div class="table-container">
+    <table class="table">
+      <thead>
+        <tr>
+          <th *ngFor="let column of columns">{{ column }}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let row of rows; let i = index" [ngClass]="{ 'even-row': i % 2 === 0, 'odd-row': i % 2 !== 0 }">
+          <td *ngFor="let cell of row">{{ cell }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div *ngIf="errorMessage" class="text-danger mt-2">{{ errorMessage }}</div>
+</div>

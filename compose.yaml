@@ -1,0 +1,10 @@
+services:
+  web:
+    build:
+      context: lms-prototype
+      target: builder
+    ports:
+      - 4200:4200
+    volumes:
+      - ./lms-prototype:/project
+      - /project/node_modules

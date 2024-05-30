@@ -1,0 +1,36 @@
+<div class="container-center-horizontal">
+  <div class="desktop-17 screen">
+    <div class="overlap-group">
+      <div class="background-image">
+        <img class="image-4 image" src="assets/image.png" alt="image 4" />
+        <img class="image-5 image1" src="assets/image.png" alt="image 5" />
+      </div>
+      <div class="frame-8">
+        <h1 class="title">LMS System</h1>
+        <div class="login">Login</div>
+        <div class="group-13">
+          <article class="input">
+            <div class="input-label body-textinter16regular">Email</div>
+            <div style="width: 100%;">
+              <input type="email" class="input_inner" [(ngModel)]="username" placeholder="Enter email address">
+            </div>
+            <div class="helper_text_input body-textinter14regular"></div>
+          </article>
+          <article class="input">
+            <div class="input-label body-textinter16regular">Password</div>
+            <div style="width: 100%;">
+              <input type="password" class="input_inner" [(ngModel)]="password" placeholder="Enter Password">
+            </div>
+            <div class="helper_text_input body-textinter14regular"></div>
+          </article>
+        </div>
+        <button class="button" (click)="login()">Login</button>
+
+        <span class="button-2" (click)="clear()">Clear</span>
+
+        <div *ngIf="errorMessage" class="text-danger mt-2">{{ errorMessage }}</div>
+      </div>
+
+    </div>
+  </div>
+</div>
